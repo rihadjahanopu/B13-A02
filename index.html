@@ -6,11 +6,57 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet" />
+		<link
 			rel="stylesheet"
 			href="style.css" />
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>Hello World</h1>
+		<main>
+			<header class="container">
+				<nav>
+					<div class="nav-section flex-box">
+						<div class="nav-logo">
+							<img
+								src="./assets/images/TechWave.png"
+								alt="" />
+						</div>
+						<input
+							type="checkbox"
+							id="toggle"
+							hidden />
+						<div class="hamburger">
+							<label for="toggle">
+								<img
+									src="./assets/images/hamburger-menu.png"
+									alt="" />
+							</label>
+						</div>
+						<div class="nav-block">
+							<ul class="nav-item">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Episodes</a></li>
+								<li><a href="#">Host</a></li>
+							</ul>
+						</div>
+						<div class="nav-cta btn">
+							<span>Subscribe</span>
+							<img
+								src="./assets/images/ArrowRight.png"
+								alt="" />
+						</div>
+					</div>
+				</nav>
+			</header>
+		</main>
 	</body>
 </html>
