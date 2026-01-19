@@ -10,6 +10,7 @@ body {
 	background-color: white;
 	font-family: "Inter", sans-serif;
 	background-color: rgba(35, 14, 61, 1);
+	color: white;
 }
 
 .container {
@@ -97,7 +98,7 @@ ul {
 
 .bottom-broder {
 	border-bottom: 1px solid rgba(65, 37, 103, 1);
-	background: var(--#1A0B2E, rgba(26, 11, 46, 1));
+	background-color: rgba(26, 11, 46, 1);
 }
 
 .nav-cta {
@@ -178,10 +179,11 @@ ul {
 
 .hero-main {
 	background-image: url("./assets/images/ImagemobileHero.png");
-	height: 760px;
+	height: auto;
 	width: 100%;
 	background-size: auto;
 	background-repeat: no-repeat;
+	padding-bottom: 0px;
 }
 
 .iconic {
@@ -229,6 +231,7 @@ ul {
 	justify-content: center;
 	align-items: center;
 	gap: 10;
+	color: black;
 	padding: 8px 16px 8px 16px;
 	border-radius: 1000px;
 	box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
@@ -247,6 +250,7 @@ ul {
 	align-items: center;
 	gap: 8px;
 	margin-top: 24px;
+	padding-bottom: 30px;
 }
 
 .hero-about h1 {
@@ -285,9 +289,87 @@ ul {
 	text-transform: capitalize;
 }
 
+.future {
+	background: rgba(26, 11, 46, 1);
+	text-align: center;
+}
+
+.future-block-1 {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.345);
+	padding: 40px 0;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.future-block-1 h2 {
+	color: rgba(255, 255, 255, 1);
+	font-style: Bold;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 39px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.future-block-1 p,
+.future-block-1 span {
+	color: rgba(255, 255, 255, 1);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 25px;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.future-block-2 {
+	width: 100%;
+	max-width: 100%;
+	padding: 40px 0;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+}
+
+.furure-kike {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.furure-kike span {
+	color: rgba(0, 255, 136, 1);
+
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 48px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.future-kike p {
+	color: rgba(255, 255, 255, 1);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: uppercase;
+}
+.fure-flex {
+	flex-direction: column;
+}
+
 @media (min-width: 320px) {
 	.container {
 		max-width: 100%;
+	}
+	/* body {
+		background-color: red;
+	} */
+
+	.hro-gep {
+		font-size: 13px;
+		font-weight: 600;
 	}
 }
 
@@ -308,8 +390,30 @@ ul {
 	}
 
 	.iconic span {
-		top: 20px;
-		right: 20px;
+		top: 10px;
+		right: 10px;
+	}
+
+	.hro-gep {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.iconic {
+		width: 300px;
+		height: 300px;
+		margin-top: 101px;
+	}
+
+	.future-block-2 {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.fure-flex {
+		padding-top: 50px;
+	}
+
+	.future-block-1 h2 {
+		font-size: 48px;
 	}
 }
 
@@ -377,6 +481,17 @@ ul {
 		width: 360px;
 		height: 360px;
 		margin-top: 101px;
+	}
+
+	.iconic span {
+		top: 20px;
+		right: 20px;
+	}
+
+	.hero-about h1 {
+		font-size: 3.5rem;
+		margin-bottom: 20px;
+		margin-top: 30px;
 	}
 }
 
