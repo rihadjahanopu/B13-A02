@@ -926,6 +926,16 @@ footer {
 	.foot-logo img {
 		width: 410px;
 	}
+
+	.main-card-box h3 {
+		font-style: Bold;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 58px;
+		letter-spacing: 0%;
+		text-align: center;
+		text-transform: capitalize;
+	}
 }
 
 @media (min-width: 992px) {
@@ -1006,5 +1016,18 @@ footer {
 	}
 	.future-block-1 h2 {
 		margin-bottom: 20px;
+	}
+	.main-card-box h3 {
+		font-style: Bold;
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 58px;
+		letter-spacing: 0%;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	.host-title {
+		font-size: 48px;
 	}
 }
