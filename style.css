@@ -433,7 +433,6 @@ ul {
 .card-init-detelish {
 	border-radius: 0px 0px 24px 24px;
 	background-color: rgba(37, 13, 68, 1);
-
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -464,6 +463,8 @@ ul {
 
 .card-init-detelish span {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 8px;
 	color: rgba(0, 255, 136, 1);
 	font-style: Bold;
@@ -480,7 +481,7 @@ ul {
 }
 
 .main-card-box {
-	padding: 40px 20px;
+	padding: 40px 0px;
 }
 
 .main-card-box h3 {
@@ -496,18 +497,96 @@ ul {
 }
 
 .card-init .card-video {
-	/* Rectangle 1 */
 	width: 100%;
 	height: auto;
+}
+
+.host-perent {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.orgin-profile-dete {
+	display: flex;
+	flex-direction: column;
+	border-radius: 40px;
+	background-color: rgba(53, 17, 101, 0.4);
+	padding: 20px;
+	gap: 16px;
+}
+
+.profile-part {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-part img {
+	width: 150px;
+	height: 150px;
+}
+
+.host-title {
+	color: rgba(255, 255, 255, 1);
+	font-style: Bold;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 39px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 24px;
+}
+.profile-detelis-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.profile-detelis-part h2 {
+	color: rgba(255, 255, 255, 1);
+	font-style: Bold;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 29px;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.profile-detelis-part p {
+	color: rgba(255, 255, 255, 0.554);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	margin-top: 20px;
+}
+
+.social-icon a {
+	border: 1px solid rgba(128, 128, 128, 0.645);
+	padding: 8px;
+	border-radius: 100%;
+}
+
+.social-icon a img {
+	width: 20px;
+	height: 20px;
 }
 
 @media (min-width: 320px) {
 	.container {
 		max-width: 100%;
 	}
-	/* body {
-		background-color: red;
-	} */
 
 	.hro-gep {
 		font-size: 13px;
@@ -672,6 +751,35 @@ ul {
 		letter-spacing: 0%;
 		text-align: center;
 		text-transform: capitalize;
+	}
+
+	.orgin-profile-dete {
+		flex-direction: row;
+		padding: 40px;
+	}
+
+	.profile-part {
+		width: 40%;
+	}
+
+	.profile-part img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.profile-detelis-part h2 {
+		text-align: left;
+	}
+	.profile-detelis-part p {
+		text-align: left;
+	}
+
+	.social-icon {
+		justify-content: left;
+	}
+
+	.host-perent {
+		padding-bottom: 120px;
 	}
 }
 
