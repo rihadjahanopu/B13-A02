@@ -503,7 +503,7 @@ ul {
 
 .host-perent {
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 
 .orgin-profile-dete {
@@ -581,6 +581,68 @@ ul {
 .social-icon a img {
 	width: 20px;
 	height: 20px;
+}
+
+footer {
+	background-image: url("./assets/images/footer-bg.png");
+	padding: 40px 0;
+	background-position: center;
+	height: 248px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.foot-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.foot-social-main {
+	display: flex;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, max-content);
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.foot-social {
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.foot-social span {
+	color: rgba(255, 255, 255, 0.52);
+	font-style: Medium;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 19px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.foot-social img {
+	width: 20px;
+}
+
+.copyright {
+	margin-top: 20px;
+	color: rgba(250, 250, 250, 0.482);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+.foot-logo {
+	width: 219px;
 }
 
 @media (min-width: 320px) {
@@ -781,6 +843,80 @@ ul {
 	.host-perent {
 		padding-bottom: 120px;
 	}
+	.main-card-box h3 {
+		font-size: 32;
+	}
+
+	footer {
+		background-image: url("./assets/images/footer-bg.png");
+		padding: 40px 0;
+		background-position: center;
+		height: 412px;
+		background-size: cover;
+	}
+
+	.foot-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.foot-social-main {
+		display: flex;
+		display: grid;
+		width: 100%;
+		grid-template-columns: repeat(4, max-content);
+		justify-content: center;
+		margin-top: 20px;
+		gap: 60px;
+		cursor: pointer;
+	}
+
+	.foot-social {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+
+	.foot-social span {
+		color: rgba(255, 255, 255, 0.52);
+		font-style: Medium;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 19px;
+		letter-spacing: 0%;
+		text-align: center;
+	}
+
+	.foot-social img {
+		width: 20px;
+	}
+
+	.copyright {
+		margin-top: 20px;
+		color: rgba(250, 250, 250, 0.482);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.foot-logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 80px;
+	}
+
+	.foot-logo img {
+		width: 410px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -825,27 +961,41 @@ ul {
 
 		gap: 24px;
 	}
+	.future-block-1 h2 {
+		font-family: 32px;
+	}
 }
 
 @media (min-width: 1200px) {
 	.container {
+		width: 1200px;
 		max-width: 100%;
-		padding: 0 200px;
+		padding: 0 0;
+	}
+	.future-block-1 h2 {
+		font-family: 32px;
 	}
 }
 
 @media (min-width: 1400px) {
 	.container {
+		width: 1200px;
 		max-width: 100%;
-		padding: 0 200px;
+		padding: 0 0;
 	}
 	.iconic {
 		width: 400px;
 		height: 400px;
-		margin-top: 101px;
+		margin-top: 85px;
 	}
 
 	.hero-about h1 {
 		font-size: 60px;
+	}
+	.main-card-box h3 {
+		font-size: 32px;
+	}
+	.future-block-1 h2 {
+		margin-bottom: 20px;
 	}
 }
